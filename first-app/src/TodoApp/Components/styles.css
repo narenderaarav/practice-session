@@ -1,0 +1,26 @@
+.todoBox{
+    width: 800px;
+    background: #9bdfff;
+    height: 200px;
+    float: left;
+    padding: 40px;
+}
+.todoList{
+    width: 100%;
+    float: left;
+}
+.todoList ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.todoList li{
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #b8e6fc;
+    border:1px #83ccef solid
+
+}
