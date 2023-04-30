@@ -18,6 +18,7 @@ const ProductListingPage = ({ productList, selectProduct }) => {
       {productListing?.map((item) => {
         const { title, description, price, rating, thumbnail, brand } = item;
         return (
+          <>
           <Box sx={{ width: "400px", border: "1px #eee solid", p: 2 }} key={title}>
             <img src={thumbnail} width={300} height={200} alt={title} />
             <Typography sx={{ fontSize: "22px", fontWeight: "bold" }}>
@@ -30,6 +31,7 @@ const ProductListingPage = ({ productList, selectProduct }) => {
             <Typography sx={{ fontSize: "14px" }}>Rating: {rating}</Typography>
             <Typography sx={{ fontSize: "14px" }}>Brand: {brand}</Typography>
           </Box>
+          </>
         );
       })}
     </Container>

@@ -8,7 +8,6 @@ const ProductMainpage = () => {
   const [productDropDownList, setProductDropDownList] = useState([]);
   const [selectProduct, setSelectProduct] = useState("");
   const [productList, setProductList] = useState([]);
-
   useEffect(() => {
     const getData = async () => {
       const data = await axios.get("https://dummyjson.com/products/categories");
@@ -21,13 +20,14 @@ const ProductMainpage = () => {
   useEffect(() => {
     const getProduct = async () => {
       const data = await axios.get(
-        "https://dummyjson.com/products/?skip=0&limit=100"
+        `https://dummyjson.com/products/category/${selectProduct}?skip=0&limit=10`
       );
       const apiResult = data.data;
       setProductList(apiResult);
     };
+   
     getProduct();
-  }, []);
+  }, [selectProduct]);
 
   const handleChange = (event) => {
     setSelectProduct(event.target.value);
