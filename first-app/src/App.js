@@ -1,6 +1,6 @@
 // import MainTodoLayout from './TodoApp/Layout/index'
 // import RestaurantLayout from './Restaurant/components/index'
-import DropDown from './DropDown';
+// import DropDown from './DropDown';
 import './App.css'
 // import Layout from './DropDownWithApi/Layout'
 // import MainPage from './Practice/Components/index'
@@ -11,8 +11,9 @@ import { Container } from '@mui/material';
 // import ProductMainpage from './Practice/Product'
 // import PaginationIndex from './Practice/Pagination'
 // import ListingMultipleTypesPage from './Practice/ListingMultipleTypes'
-import ProductMainPage from './Practice/ProductBox'
-import CountriesMainPage from './CountriesDropDown'
+// import ProductMainPage from './Practice/ProductBox'
+// import CountriesMainPage from './CountriesDropDown'
+import Reduce from './Reduce'
 function App() {
   return (
     <div className="App">
@@ -20,7 +21,7 @@ function App() {
       {/* <RestaurantLayout/> */}
       {/* <Layout/> */}
       {/* <Layout/> */}
-      <DropDown/>
+      {/* <DropDown/> */}
       <Container>
       {/* <MainPage/>*/}
       {/* <BasicSwitches/>  */}
@@ -29,8 +30,9 @@ function App() {
       {/* <ProductMainpage/> */}
       {/* <PaginationIndex/> */}
       {/* <ListingMultipleTypesPage/> */}
-      <ProductMainPage/>
-      <CountriesMainPage/>
+      {/* <ProductMainPage/>
+      <CountriesMainPage/> */}
+  <Reduce/>
       </Container>
     </div>
   );
