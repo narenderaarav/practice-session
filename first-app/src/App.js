@@ -13,7 +13,9 @@ import { Container } from '@mui/material';
 // import ListingMultipleTypesPage from './Practice/ListingMultipleTypes'
 // import ProductMainPage from './Practice/ProductBox'
 // import CountriesMainPage from './CountriesDropDown'
-import Reduce from './Reduce'
+import Reduce from './Reduce';
+import ReduceEx from './Reduce/reduceEx'
+
 function App() {
   return (
     <div className="App">
@@ -32,7 +34,8 @@ function App() {
       {/* <ListingMultipleTypesPage/> */}
       {/* <ProductMainPage/>
       <CountriesMainPage/> */}
-  <Reduce/>
+  {/* <Reduce/> */}
+  <ReduceEx/>
       </Container>
     </div>
   );
